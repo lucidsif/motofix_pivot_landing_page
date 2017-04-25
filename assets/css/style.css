@@ -4990,7 +4990,6 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	background-size: cover;
 	padding: 0 0 30px;
 	font-weight: 300;
-	background-image: url('../img//background/low_poly_background.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-attachment: fixed;
@@ -5014,8 +5013,9 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 }
 
 .footer .heading {
+	color: black;
 	margin-bottom: 25px;
-	font-weight: 500;
+	font-weight: 200;
 	text-transform: uppercase;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.36);
@@ -5045,6 +5045,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	padding-left: 30px;
 	font-size: 15px;
 	line-height: 1.6;
+	color: black;
 }
 
 .footer .list-unstyled li .icon {
