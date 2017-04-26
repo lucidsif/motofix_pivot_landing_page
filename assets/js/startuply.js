@@ -370,7 +370,7 @@ Startuply = {
                 success: function(msg) {
                     if ( msg.indexOf('Success') != -1 ) {
                         if ( typeof toastr != 'undefined' ) toastr.success('Success! You are now subscribed to our newsletter!');
-                        else if ( $responseBlock.length ) $responseBlock.html('<span class="success-message">Success! You are now subscribed to our newsletter!</span>');
+                        else if ( $responseBlock.length ) $responseBlock.html('<span class="success-message">Success! Thank you for signing up!</span>');
 
                     } else {
                         if ( typeof toastr != 'undefined' ) toastr.error(msg);
@@ -440,10 +440,11 @@ Startuply = {
         };
 
         doneHandler = function (msg, form) {
-            if( msg === 'ok' ) {
+            console.log(msg);
+            if( msg.id >= 0 ) {
                 form.reset();
 
-                if ( typeof toastr != 'undefined' ) toastr.success('Success');
+                if ( typeof toastr != 'undefined' ) toastr.success('Success, thank you for your interest!');
                 else alert('Success');
 
             } else {

@@ -67,11 +67,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-						<form class="form form-register dark-text" id="registration" method="post" action="signup.php">
+						<form class="form form-register dark-text" id="registration" method="post" action="https://swan.motofix-split-backend.c66.me/leads">
 							<div class="form-group">
 								<label for="fullname" class="col-sm-3 col-xs-12 control-label">Full name</label>
 								<div class="col-sm-9 col-xs-12">
-									<input type="text" class="form-control required" name="fullname" id="fullname" placeholder="">
+									<input type="text" class="form-control required" name="name" id="fullname" placeholder="">
 								</div>
 							</div>
 							<div class="form-group">
@@ -81,9 +81,15 @@
 								</div>
 							</div>
 							<div class="form-group">
+								<label for="email" class="col-sm-3 col-xs-12 control-label">Phone number</label>
+								<div class="col-sm-9 col-xs-12">
+									<input type="text" class="form-control" name="phone" id="text" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
 								<label for="website" class="col-sm-3 col-xs-12 control-label">DBA</label>
 								<div class="col-sm-9 col-xs-12">
-									<input type="text" class="form-control" name="website" id="website" placeholder="">
+									<input type="text" class="form-control" name="dba" id="website" placeholder="">
 								</div>
 							</div>
 
@@ -91,7 +97,7 @@
 								<div class="col-sm-offset-2 col-sm-10">
 									<div class="checkbox">
 										<label>
-											<input type="checkbox" name="newsletter" value="1"> Get monthly tips on how to to increase sales, brand presence, and customer happiness for auto repair businesses.
+											<input type="checkbox" name="subscribed" value="true"> Get monthly tips on how to to increase sales, brand presence, and customer happiness for auto repair businesses.
 										</label>
 									</div>
 								</div>
